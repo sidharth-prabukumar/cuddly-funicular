@@ -14,6 +14,7 @@ int main()
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
 	GLFWwindow* window = glfwCreateWindow(800, 600, "OpenGL", nullptr, nullptr); // Windowed
+	//GLFWwindow* window = glfwCreateWindow(1920, 1080, "OpenGL", glfwGetPrimaryMonitor(), nullptr); // Fullscreen
 	glfwMakeContextCurrent(window);
 	glewExperimental = GL_TRUE;
 	glewInit();
@@ -25,6 +26,10 @@ int main()
 	{
 		glfwSwapBuffers(window);
 		glfwPollEvents();
+		if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+		{
+			glfwSetWindowShouldClose(window, GL_TRUE);
+		}
 	}
 
 	glfwTerminate();
