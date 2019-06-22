@@ -1,5 +1,6 @@
 #define GLEW_STATIC
 #include <GL/glew.h>
+#include <stdio.h>
 #include <GLFW/glfw3.h>
 
 int main()
@@ -14,6 +15,12 @@ int main()
 
 	GLFWwindow* window = glfwCreateWindow(800, 600, "OpenGL", nullptr, nullptr); // Windowed
 	glfwMakeContextCurrent(window);
+	glewExperimental = GL_TRUE;
+	glewInit();
+	GLuint vertexBuffer;
+	glGenBuffers(1, &vertexBuffer);
+
+	printf("%u\n", vertexBuffer);
 	while (!glfwWindowShouldClose(window))
 	{
 		glfwSwapBuffers(window);
