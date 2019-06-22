@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+/OpenGLProj_1/x64/Debug
+/OpenGLProj_1/.vs
+*.vcxproj.filters
+*.vcxproj.user
+
