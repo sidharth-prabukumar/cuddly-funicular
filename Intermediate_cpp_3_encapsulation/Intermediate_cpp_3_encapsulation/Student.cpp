@@ -8,6 +8,7 @@ Student::Student()
 
 Student::~Student()
 {
+	std::cout << "Student Destructor called as a result of the delete keyword being used" << std::endl;
 }
 
 void Student::setAge(int age)

@@ -6,5 +6,6 @@ const char* Log(const char* message)
 int Multiply(int a, int b)
 {
 	Log("Multiply");
-	return a * b;
+	int result = a * b;
+	return result;
 }

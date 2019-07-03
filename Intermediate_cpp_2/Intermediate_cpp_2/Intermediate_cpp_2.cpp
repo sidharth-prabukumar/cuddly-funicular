@@ -6,12 +6,13 @@
 #include "Teacher.h"
 #include "Student.h"
 
+#define NoOfStudents 3
 int main()
 {
-	Student stnt[3];
+	Student stnt[NoOfStudents];
 	Teacher teach;
 	Course Inter_cpp;
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < NoOfStudents; i++)
 	{
 		Inter_cpp.getStudent(i) = stnt[i];
 	}
@@ -19,7 +20,7 @@ int main()
 	Inter_cpp.getCourseName();
 	teach.GradeStudent();
 	teach.SitInClass();
-
+	stnt[0].SitInClass();
 
 }
 

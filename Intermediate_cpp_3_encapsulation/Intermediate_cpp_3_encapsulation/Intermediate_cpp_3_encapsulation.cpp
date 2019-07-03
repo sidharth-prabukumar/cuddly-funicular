@@ -2,9 +2,22 @@
 //
 
 #include <iostream>
+#include "Person.h"
+#include "Student.h"
 
 int main()
 {
+	Person* p = new Person;
+	Student* s= new Student;
+	s->SayHello();
+	p->SayHello();
+	s->setAge(25);
+	s->SetFirstName("Sid");
+	std::cout << "First Name=" << s->GetFirstName() << std::endl;
+	std::cout <<"Age="<< s->getAge() << std::endl;
+	delete(s);
+	delete(p);
+
     std::cout << "Hello World!\n";
 }
 

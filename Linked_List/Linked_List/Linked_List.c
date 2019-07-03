@@ -20,11 +20,11 @@ int main(void) {
 
 	scanf_s("%d %d %d", &ageP, &ageR, &ageM);
 
-	start = createStudent("Petra", ageP);
+	start = createStudent("Petra\0", ageP);
 	end = start;
-	newStudptr = createStudent("Remi", ageR);
+	newStudptr = createStudent("Remi\0", ageR);
 	end = append(end, newStudptr);
-	newStudptr = createStudent("Mike", ageM);
+	newStudptr = createStudent("Mike\0", ageM);
 	end = append(end, newStudptr);
 
 	printStudents(start);
@@ -37,7 +37,10 @@ struct student* createStudent(char studentName[], int studentAge)
 {
 	struct student* ptr;
 	ptr = (struct student*) malloc(sizeof(struct student));
-	strcpy_s(ptr->name, studentName);
+	for (int i = 0; i < strlen(studentName); i++)
+	{
+		ptr->name[i] = studentName[i];
+	}
 	ptr->age = studentAge;
 	ptr->next = NULL;
 	return ptr;
@@ -52,9 +55,11 @@ struct student* append(struct student* end, struct student* newStudptr)
 
 void printStudents(struct student* start)
 {
-	while (start->next != NULL)
+	struct student* ptr = start;
+	while (ptr != NULL)
 	{
-		printf("%s is %d years old.\n", start->name, start->age);
+		printf("%s is %d years old.\n", ptr->name, ptr->age);
+		ptr = ptr->next;
 	}
 }
 

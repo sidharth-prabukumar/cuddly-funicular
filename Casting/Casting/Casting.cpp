@@ -37,9 +37,10 @@ int main()
 	int b1 = value1;	//Implicit conversion
 	int b2 = (int)value1;	//Explicit conversion
 		//C++ style casting
-	double s = static_cast<int>(value) + 5.3;
+	double s = static_cast<int>(value1) + 5.3;
+	std::cout << s << std::endl;
 	//AnotherClass* s1 = static_cast<AnotherClass*>(&value) + 5.3;	// Not happy because of compile time checking
-	AnotherClass* s2 = reinterpret_cast<AnotherClass*>(&value);	// No compile time checking
+	AnotherClass* s2 = reinterpret_cast<AnotherClass*>(&a);	// No compile time checking
 
 	//Dynamic Cast
 	Derived* derived = new Derived();

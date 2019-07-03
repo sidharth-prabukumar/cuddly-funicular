@@ -24,7 +24,7 @@ Person::Person(std::string fName, std::string lName, int age)
 
 Person::~Person()
 {
-	std::cout << "Destructor called as a result of the delete keyword being used" << std::endl;
+	std::cout << "Person Destructor called as a result of the delete keyword being used" << std::endl;
 }
 
 void Person::SetFirstName(std::string fName)

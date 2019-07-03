@@ -11,9 +11,9 @@ public:
 	Teacher()
 	{
 		age = 31;
-		first_name = "Consuelo";
-		last_name = "Cerna";
-		address = "blah1";
+		first_name = "My";
+		last_name = "Teacher";
+		address = "techme1";
 		phone = "123456";
 	}
 	void GradeStudent() { std::cout << "Student Graded" << std::endl; }

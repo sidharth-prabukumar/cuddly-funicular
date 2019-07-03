@@ -11,7 +11,7 @@ Heap is also pre-defined size of memory but can grow as the application goes on(
 
 struct Vector3
 {
-	float x, y, z;
+	int x, y, z;
 
 	Vector3()
 		: x(10), y(11), z(12)

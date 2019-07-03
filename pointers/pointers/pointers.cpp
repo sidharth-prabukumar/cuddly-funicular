@@ -11,7 +11,7 @@
 	(*value)++;
 }*/
 
-void Increment(int& value)	//Normal C way
+void Increment(int& value)	//C++ reference way
 {
 	value++;
 }
@@ -23,7 +23,7 @@ int main()
 	int var = 8;
 	void* ptr = &var;
 	char* buffer = new char[8];
-	memset(buffer, 0, sizeof(buffer));
+	memset(buffer, 5, sizeof(buffer));
 
 	char** ptr1 = &buffer;
 

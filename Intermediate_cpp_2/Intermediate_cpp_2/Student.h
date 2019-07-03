@@ -15,7 +15,7 @@ public:
 		age = 25;
 		first_name = "Sid";
 		last_name = "Prabu";
-		address = "blah";
+		address = "student";
 		phone = "12345";
 	}
 
