@@ -29,8 +29,18 @@
 *.exe
 *.out
 *.app
-/OpenGLStuff/Debug
-/OpenGLStuff/.vs
+
 *.vcxproj.filters
 *.vcxproj.user
+*.suo
+*.db
+*.ipch
+*.log
+*.tlog
+*.lastbuildstate
+*.idb
+*.pdb
+*.ilk
+*.opendb
+*.enc
 
