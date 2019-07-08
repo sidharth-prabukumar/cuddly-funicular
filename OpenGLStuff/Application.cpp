@@ -96,9 +96,9 @@ int main(void)
 	std::cout << glGetString(GL_VERSION) << std::endl;
 
 	float positions[] = {
-		0.0f,  0.5f, 1.0f, 0.0f, 0.0f,
-		0.5f, -0.5f, 0.0f, 1.0f, 0.0f,
-		-0.5f, -0.5f, 0.0f, 0.0f, 1.0f,
+		0.0f,  0.5f, 1.0f, 0.753f, 0.796f,
+		0.5f, -0.5f, 1.0f, 0.7137f, 0.757f,
+		-0.5f, -0.5f, 1.0f, 0.4117f, 0.7059f,
 	};
 
 	unsigned int buffer;
