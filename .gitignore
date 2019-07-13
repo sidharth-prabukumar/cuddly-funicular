@@ -43,4 +43,11 @@
 *.ilk
 *.opendb
 *.enc
+*.json
+*.sqlite
+*.cmake
+*.bin
+*.check_cache
+*.cxx
+*.inl
 
