@@ -49,5 +49,4 @@
 *.bin
 *.check_cache
 *.cxx
-*.inl
 
