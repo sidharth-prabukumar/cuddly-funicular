@@ -83,9 +83,9 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-	  <AdditionalIncludeDirectories>C:\personal\cuddly-funicular\OpenGLStuff\vendor;C:\personal\cuddly-funicular\OpenGLStuff;C:\Users\sidha\Documents\ws\cuddly-funicular\OpenGLStuff;C:\Users\sidha\Documents\ws\cuddly-funicular\OpenGLStuff\vendor;C:\personal\cuddly-funicular\Includes\include;C:\Users\sidha\Documents\ws\cuddly-funicular\Includes\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-       
+      <AdditionalIncludeDirectories>C:\personal\cuddly-funicular\OpenGLStuff\vendor;C:\personal\cuddly-funicular\OpenGLStuff;C:\Users\sidha\Documents\ws\cuddly-funicular\OpenGLStuff;C:\Users\sidha\Documents\ws\cuddly-funicular\OpenGLStuff\vendor;C:\personal\cuddly-funicular\Includes\include;C:\Users\sidha\Documents\ws\cuddly-funicular\Includes\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>GLEW_STATIC;MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

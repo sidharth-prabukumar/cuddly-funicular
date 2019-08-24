@@ -4,8 +4,8 @@
 Shader::Shader(const std::string& filepath)
 	:m_FilePath(filepath), m_RendererID(0)
 {
-	ShaderProgramSource source = ParseShader(filepath);
-	m_RendererID = CreateShader(source.VertexSource, source.FragmentSource);
+	auto[vertexSource, fragmentSource] = ParseShader(filepath);
+	m_RendererID = CreateShader(vertexSource, fragmentSource);
 }
 
 Shader::~Shader()
@@ -54,7 +54,7 @@ unsigned int Shader::CompileShader(unsigned int type, const std::string& source)
 }
 
 
-ShaderProgramSource Shader::ParseShader(const std::string& filepath)
+std::tuple<std::string, std::string> Shader::ParseShader(const std::string& filepath)
 {
 	std::ifstream stream(filepath);
 

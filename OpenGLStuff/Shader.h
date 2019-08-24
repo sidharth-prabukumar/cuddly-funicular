@@ -4,15 +4,10 @@
 #include <string>
 #include <sstream>
 #include <unordered_map>
+#include <tuple>
 
 #include "glm/glm.hpp"
 #include "glm/gtc/matrix_transform.hpp"
-
-struct ShaderProgramSource
-{
-	std::string VertexSource;
-	std::string FragmentSource;
-};
 
 class Shader
 {
@@ -35,7 +30,7 @@ public:
 private:
 	unsigned int CreateShader(const std::string& vertexShader, const std::string& fragmentShader);
 	unsigned int CompileShader(unsigned int type, const std::string& source); 
-	ShaderProgramSource ParseShader(const std::string& filepath);
+	std::tuple<std::string, std::string> ParseShader(const std::string& filepath);
 	unsigned int GetUniformLocation(const std::string& name);
 
 };
