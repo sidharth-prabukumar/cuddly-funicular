@@ -1,5 +1,5 @@
 # cuddly-funicular
-OpenGL Texture Manipulation and Test Code Base
+OpenGL Renderer with Texture Manipulation and Test Frameworks
 
 This OpenGL project is a work in progress where I create and learn more features for textures and objects rendering and 
 tests to go with that.
