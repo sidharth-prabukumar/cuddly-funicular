@@ -70,8 +70,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\sidha\Documents\ws\cuddly-funicular\Includes\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\sidha\Documents\ws\cuddly-funicular\Includes\Libraries;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)Includes\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)Includes\Libraries;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>C:\Users\sidha\Documents\ws\cuddly-funicular\Includes\include;$(IncludePath)</IncludePath>
@@ -83,13 +83,13 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\personal\cuddly-funicular\OpenGLStuff\vendor;C:\personal\cuddly-funicular\OpenGLStuff;C:\Users\sidha\Documents\ws\cuddly-funicular\OpenGLStuff;C:\Users\sidha\Documents\ws\cuddly-funicular\OpenGLStuff\vendor;C:\personal\cuddly-funicular\Includes\include;C:\Users\sidha\Documents\ws\cuddly-funicular\Includes\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)vendor;$(ProjectDir);$(ProjectDir)Includes\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>GLEW_STATIC;MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>C:\personal\cuddly-funicular\Includes\Libraries;C:\Users\sidha\Documents\ws\cuddly-funicular\Includes\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)Includes\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;user32.lib;glew32s.lib;gdi32.lib;Shell32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
